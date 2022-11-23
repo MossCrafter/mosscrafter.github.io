@@ -57,10 +57,16 @@ function draw() {
     drawLander();
 }
 
-function drawTerrain() {    
+function drawTerrain() {
 }
 
-function drawLander() {    
+function drawLander() {
+    const landerImage = new Image();
+    landerImage.src = 'images/lander.png';
+    landerImage.addEventListener('load', (e) => {
+        ctx.drawImage(landerImage, 50, 50);
+    })
+
 }
 
 ////////////////////
